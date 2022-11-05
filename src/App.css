@@ -1,38 +1,68 @@
+:root {
+  --card-color: rgb(224, 223, 223);
+  --todo-color: rgb(245, 245, 245);
+  --black-color: #161719;
+  --purple-color: #B634C5;
+  --green-color: #25c8ab;
+  --white-color: #F4F5F9;
+}
+
 .App {
   text-align: center;
+  background-color: var(--white-color);
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.TheNavLink {
+  margin: 5px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.TheNavLink:active,
+.TheNavLink:focus {
+  text-decoration: underline 2px black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Todos {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: var(--card-color);
+  width: fit-content;
+  padding: 8px;
+  border-radius: 15px;
+  margin: 0 auto;
+  margin-top: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.Todo{
+  margin: 5px 1%;
+  display: flex;
+  background-color: var(--todo-color);
+  width: 98%;
+  padding: 5px 0;
+  border-radius: 12px;
+  box-shadow: 21px 13px 40px -14px rgba(0,0,0,0.56);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Todo p {
+  margin: 0;
+  padding-left: 5px;
+  margin-right:auto;
+}
+.Todo i {
+  padding: 0 5px;
+}
+.AddTodo form input {
+  border-radius: 15px;
+  border: 1px solid black;
+  padding: 3px 4px;
+}
+.AddTodo form input:focus, 
+.AddTodo form input:active {
+  border: 1px solid rgb(159, 159, 159);
+}
+.completed {
+  background-color: var(--green-color);
 }

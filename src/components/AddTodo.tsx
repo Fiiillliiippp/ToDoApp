@@ -20,7 +20,7 @@ const AddTodos = () => {
 
   
   return (
-    <div>
+    <div className='AddTodo'>
       <form onSubmit={handleSubmit}>
         <input value={newTodo} onChange={handleChanging} />
       </form>

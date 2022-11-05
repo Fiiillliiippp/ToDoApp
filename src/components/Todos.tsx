@@ -6,7 +6,7 @@ const Todos = () => {
   const { todos } = useAppContainer();
 
   return (
-    <div className='Todos' >
+    <div className='Todos'>
       {todos.map(todo => (
         <Todo key={todo.id} todo={todo} />
       ))}

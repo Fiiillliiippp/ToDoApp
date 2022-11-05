@@ -1,5 +1,4 @@
 import { Route, Routes } from "react-router-dom"
-import AddTodos from "./AddTodo"
 import Home from "./Home"
 import Todos from "./Todos"
 
