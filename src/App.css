@@ -66,3 +66,45 @@
 .completed {
   background-color: var(--green-color);
 }
+.HeaderText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Header h3 {
+  margin: 2px 8px;
+}
+.Header form input {
+  border-radius: 15px;
+  border: 1px solid black;
+  padding: 3px 4px;
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+.Home {
+  background-color: var(--white-color);
+  color: var(--black-color);
+}
+.HomeTodos {
+  font-size: 1.1rem;
+  font-weight: 500;
+} 
+.HomeTodos i{
+  color: var(--black-color);
+}
+.TodoSite button {
+  color: var(--black-color);
+  background-color: rgb(91, 154, 247);
+  border: none;
+  padding: 4px 6px;
+  font-size: 1.1rem;
+  border-radius: 15px;
+}
+.TodoSite button:active,
+.TodoSite button:focus {
+  background-color: rgb(43, 107, 202);
+}

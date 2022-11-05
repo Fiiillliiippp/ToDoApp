@@ -13,8 +13,10 @@ type Props = {
 };
 const Container = ({ children }: Props) => {
   const [todos, setTodos] = useState([
-    { id: 1, text: 'navigator', done: false },
-    { id: 2, text: 'navigator2', done: false },
+    { id: 1, text: 'Cook', done: false },
+    { id: 2, text: 'Gym', done: true },
+    { id: 3, text: 'Shopping', done: false },
+    { id: 2, text: 'Cleaning', done: false }
   ]);
 
   const handleAddTodo = (data: string) => {
