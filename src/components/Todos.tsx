@@ -10,10 +10,8 @@ const Todos = () => {
     <div className='Todos'>
       <Header />
       {todos.map(todo => (
-        <>
         <Todo key={todo.id} todo={todo} />
-        </>
-      ))}
+        ))}
       <AddTodos />
     </div>
   );

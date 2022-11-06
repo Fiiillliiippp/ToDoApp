@@ -1,9 +1,13 @@
 import Todos from "./Todos"
 
 const TodoSite = () => {
+  const handleAddTodos = () => {
+    console.log("Add Todo List");
+    
+  }
   return(
     <div className="TodoSite">
-      <button>Add Todo List</button>
+      <button onClick={handleAddTodos}>Add Todo List</button>
       <Todos />
     </div>
   )

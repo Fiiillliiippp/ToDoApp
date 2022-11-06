@@ -11,10 +11,10 @@ function App() {
     <div className="App">
       <Container>
       {params => (
-        <>
+        <div className="Container">
           <TheNavigation />
           <Router />
-        </>
+        </div>
       )}
       </Container>
     </div>

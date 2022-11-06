@@ -8,9 +8,9 @@
 }
 
 .App {
+  height: 100%;
   text-align: center;
   background-color: var(--white-color);
-  height: 100vh;
 }
 
 .TheNavLink {
@@ -20,6 +20,9 @@
   font-weight: 500;
 }
 
+.Container {
+  height: 100vh;
+}
 .TheNavLink:active,
 .TheNavLink:focus {
   text-decoration: underline 2px black;
@@ -29,12 +32,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   background-color: var(--card-color);
   width: fit-content;
   padding: 8px;
   border-radius: 15px;
   margin: 0 auto;
-  margin-top: 15px;
+  margin-top: 8%;
 }
 
 .Todo{
@@ -53,6 +57,7 @@
 }
 .Todo i {
   padding: 0 5px;
+  margin: 0 2px;
 }
 .AddTodo form input {
   border-radius: 15px;
@@ -96,6 +101,12 @@
 .HomeTodos i{
   color: var(--black-color);
 }
+.TodoSite {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .TodoSite button {
   color: var(--black-color);
   background-color: rgb(91, 154, 247);
@@ -103,6 +114,7 @@
   padding: 4px 6px;
   font-size: 1.1rem;
   border-radius: 15px;
+  margin-top: 15px;
 }
 .TodoSite button:active,
 .TodoSite button:focus {

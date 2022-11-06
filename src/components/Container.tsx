@@ -16,7 +16,7 @@ const Container = ({ children }: Props) => {
     { id: 1, text: 'Cook', done: false },
     { id: 2, text: 'Gym', done: true },
     { id: 3, text: 'Shopping', done: false },
-    { id: 2, text: 'Cleaning', done: false }
+    { id: 4, text: 'Cleaning', done: false },
   ]);
 
   const handleAddTodo = (data: string) => {
@@ -35,21 +35,21 @@ const Container = ({ children }: Props) => {
     );
   };
   const handleRemoving = (idNumber: number) => {
-    setTodos(prevTodos => {return prevTodos.map(todo => {
-      if(idNumber !== todo.id) {
-        return todo
-      } return {...todo, done: !todo.done}
-    })})
-
-    // setTodos(prevTodos =>
-    //   prevTodos.map(todo => {
-    //     if (inNumber === todo.id) {
-    //       return { todo };
-    //     }
-    //     return { ...todo, done: !todo.done };
-    //   })
-    // );
+    setTodos(prevTodos => {
+      return prevTodos.map(todo => {
+        if (idNumber !== todo.id) {
+          return todo;
+        }
+        return { ...todo, done: !todo.done };
+      });
+    });
   };
+
+  // const handleAddTodoList = (todo: string) => {
+  //   setAllTodos(prevTodos => {
+  //     return [...prevTodos,  {id: Math.random(), text: todo, done: false} ];
+  //   });
+  // };
   const appState: AppState = {
     todos,
     onSubmiting: handleAddTodo,
